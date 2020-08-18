@@ -1,4 +1,4 @@
-#Loading CSV File into RStudio 
+#Loading CSV File into RStudio without Readr Package 
 # File > New File > R Script 
 # In New Tab save csvfilename.R in file directory (where csv data is saved) 
 
