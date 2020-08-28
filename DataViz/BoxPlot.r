@@ -1,4 +1,5 @@
 #Example from Data Analysis with R 3.2
+#BoxPlot of the Median Value or "MEDV" 
 
 > #boxplot
 > boxplot(BostonHousing.df$MEDV ~ BostonHousing.df$CHAS, xlab = "CHAS", ylab = "MEDV")
