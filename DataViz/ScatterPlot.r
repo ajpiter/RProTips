@@ -5,7 +5,4 @@
 > 
 > #Second Scatter Plot 
 > library(ggplot2)
-> ggplot(BostonHousing.df) +geom_point(aes(x = LSTAT, y=MEDV), colours = "navy", alpha = 0.7) 
-Warning message:
-Ignoring unknown parameters: colours 
 > ggplot(BostonHousing.df) +geom_point(aes(x = LSTAT, y=MEDV), colour = "navy", alpha = 0.7) 
