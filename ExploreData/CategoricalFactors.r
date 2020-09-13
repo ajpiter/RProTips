@@ -1,4 +1,7 @@
 #Categorical values are 
+#Nominal if they are names only. Example Boy Girl 
+#Binomial if they are numbers only. Example 0 1 (or TRUE FALSE, or Yes No) 
+#ordinal if they are categories. Example Small Medium Large
 
 #factors convert categorical data to a numbered indiex 
 #numbers are typically assigned alphabetically 
