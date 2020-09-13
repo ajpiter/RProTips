@@ -11,6 +11,23 @@ dataframe[which.max(dataframe$columnname), ] #Max Value by column name
 dataframe[length(dataframe$Columnname), ]    #Length of specific column 
 dataframe[mean(dataframe$Columnname), ]      #Mean of specific column
 
+#Math Summaries on Matrix
+mean(matrixname[row, col])
+mean(matrixname[row, ]) 
+mean(matrixname[ , col]) 
+mean(matrixname[1:10, ]) 
+
+sd(matrixname[row, col])
+max(matrixname[row, col]) 
+min(matrixname[row, col]) 
+
+#Summary using apply() 
+#apply() only works on matrix 
+avgColumns <- apply(matrixname, 2, mean) #2 indicates columns 
+avgColumns #print 
+avgRow <- apply(matrixname, 1, mean) #1 indicates rows 
+avgRow #print 
+
 #DataCamp Use Case Example 
 
 # Finish the read.delim() call
