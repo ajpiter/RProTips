@@ -4,6 +4,15 @@
 class(dataframename.df$ColumnName) 
 # output could be "charter" or "factor" etc. 
 
+#To convert data types, use the following functions 
+as.interger()
+as.numeric()
+as.character()
+as.logical()
+as.POSIXct()
+as.POSIXit()
+as.Date()
+
 #To change the class of variable from "charter" to "factor"
 dataframename.df$ColumnName <- as.factor(dataframename.df$ColumnName) 
 class(dataframename.df$ColumnName)
