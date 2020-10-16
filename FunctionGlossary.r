@@ -23,6 +23,7 @@ set.diff() #used to ensure no overlap in new tables when partitioning dataframe
 #Ready for Visualization 
 .bincode() #Bin a numeric vector and return integer codes for the binning, RM.bin=4 if 4<RM<=5; RM.bin=5 if 5<RM<=6;
 aggregate() list() #to tabulate counts 
+ggcorrplot(): a graphical display of a correlation matrix using ggplot2
 
 is.na() #True or FALSE if a value is = to "na" 
 
