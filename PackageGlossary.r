@@ -1,6 +1,9 @@
 #Below is a list of packages, and thier use case in R 
 
-readr #quickly import csv files in R 
-kntr #helps with r markdown files 
+#Import/Export
+library(readr) #quickly import csv files in R 
+library(kntr) #helps with r markdown files 
 
-dplyr #create tidy data using dplyr verbs
+library(dplyr) #create tidy data using dplyr verbs
+
+library(dummies) #create dummy variables 
