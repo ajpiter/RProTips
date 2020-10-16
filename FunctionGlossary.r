@@ -22,3 +22,5 @@ set.diff() #used to ensure no overlap in new tables when partitioning dataframe
 
 
 is.na() #True or FALSE if a value is = to "na" 
+
+data.frame() #create data frames, tightly coupled collections of variables which share many of the properties  of matrices and of lists
