@@ -13,3 +13,7 @@ rules <-apriori(fp.trans, parameter = list(supp = 0.2, conf = 0.5, target = "rul
 
 # inspect the first six rules, sorted by their lift
 inspect(head(sort(rules, by = "lift"), n = 6))
+
+#Support: impact of the rule in terms of overall size (e.g., how many transactions are affected?)
+#Lift: how efficient the rule is in finding consequents, compared to random selection (but still consider the rule with high support)
+#Confidence: at what rate consequents will be found if the rule is applied (useful in determining the business or operational usefulness of a rule; e.g., whether to be worth the cost of promoting) 
