@@ -10,6 +10,8 @@ plot(WestRoxbury.df$BEDROOMS ~ WestRoxbury.df$TAX, xlab= "Total Value", ylab = "
 
 ----- 
 
+
+
 #Example from Data Analysis with R 3.1
 > #Second Scatter Plot 
 > library(ggplot2)
