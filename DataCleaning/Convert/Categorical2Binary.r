@@ -17,3 +17,6 @@ knitr::kable(fastDummies_example)
 results <- fastDummies::dummy_cols(fastDummies_example, select_columns = "animals")
 #prints new dataset
 knitr::kable(results)
+
+#if using to create dummy variables don't forget to delete one of the columns 
+housing.df<-housing.df[, 1:15]]# remove16th column, keeping only 1st -15th
