@@ -1,3 +1,5 @@
+#Also see Creating Variables using .bincode() and cut() functions
+
 #Create a Categorical Variable 
 data$NewCategory <- ifelse(data$variable <= 0.01, "Low", ifelse(data$variable > 0.01 & data$variable <= 0.025,
                                                      "Med", "High"))
