@@ -22,6 +22,10 @@ DataFrame <- read.csv("csvfilename.csv", header = TRUE)
 ----- #Combine Multiple DataFrames After Import -----
 MasterDataFrame <- rbind(DataFrame, DataFrame2, DataFrame3, DataFramei)
 
+----- #Import a Specific Worksheet -----
+mydata <- read.xlsx("c:/myexcel.xlsx", sheetName = "mysheet")
+#Source: https://www.statmethods.net/input/importingdata.html
+
 ----- #Import File, With Today's Date ----- 
 #For files with the naming convention YYYY-MM-DD.FileName 
 setwd("/Users/ComputerName/Documents/FolderName/SubFolderName") 
