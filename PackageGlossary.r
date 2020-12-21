@@ -12,7 +12,11 @@ library(ggplot2) #used for visualization
 library(lattice) #used for complex data visualization
 library(car) #used for making a scatterplot matrix
 
-##### Other #####
-library(rstudioapi) #library for getting RStudio version
-library(dummies) #create dummy variables 
+##### Data Cleaning #####
 library(dplyr) #used for data manipulation
+library(data.table) #used to create new dataframes, great for data dictionaries 
+library(rstudioapi) #library for getting RStudio version
+
+##### Data Modeling #####
+library(dummies) #create dummy variables 
+library(lime) #explain outcome of black box models
