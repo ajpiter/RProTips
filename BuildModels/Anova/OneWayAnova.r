@@ -11,14 +11,15 @@ Florida <-filter(DataFile, state =="Florida")
 PuertoRico <- filter(DataFile, state == "Puerto Rico") 
 WashingtonDC <- filter(DataFile, state == "WashingtonDC") 
 
+#Create new Table with filtered data
 DataComparison <- filter(DataFile, state == "Florida" | state == "Puerto Rico" | state == "WashingtonDC")  
 DataComparison$Variable <- as.numeric(DataComparison$Variable) #converts from character to numeric 
 
 #Create a boxplot to visualize the difference between groups 
-boxplot(DataComparison$Variable ~ DataComparison$State, ylab ="Variable", xlab = "State of Residence" 
+boxplot(DataComparison$Variable ~ DataComparison$State, ylab ="Variable", xlab = "State of Residence")
 
 #Summaries 
-summary(DataComparison$Variable) #statistics for all 3 groups 
+summary(DataComparison$Variable) #statistics combined for all 3 groups 
 summary(Florida$Variable) #stats for FL 
 summary(PuertoRico$Variable) #stats for PR 
 summary(WashingtonDC$Variable) #stats for DC 
