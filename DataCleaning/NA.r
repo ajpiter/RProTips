@@ -11,8 +11,14 @@ NA_Character
 4 > NA 
 [1] NA 
 
-#test to see if value is NA 
+##### Test to see if single value is NA #####
 is.na(x) 
 [1] FALSE 
 is.na(x = NA) 
 [1] TRUE 
+
+##### Check to see if Data Table is NA ##### 
+records.missing <- rowSums(is.na(DataTable))>0 
+DataTable.nonmissing <- DataTable[!records.missing, ] 
+dim(DataTable.nonmissing)
+dim(DataTable)
