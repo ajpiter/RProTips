@@ -8,9 +8,9 @@
 #Significant Result: If the two means are unequal.
 
 #Example Leg Strength According to Weight 
-Independent Variable: Leg Strength 
-Dependent Group: Weight
-Dependent Levels: Underweight, Average Weight, Overweight 
+#Independent Variable: Leg Strength 
+#Dependent Group: Weight
+#Dependent Levels: Underweight, Average Weight, Overweight 
 
 #Limits & Further Testing
 #Limits: F-Statistic will tell you at least two groups were different from each other. But it won’t tell you which groups were different. 
