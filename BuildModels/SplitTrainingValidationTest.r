@@ -21,3 +21,21 @@ dim(housing.data)
 dim(train.data)
 dim(valid.data)
 dim(test.data)
+
+##### Training Example #####
+
+set.seed(1)
+train.rows <-sample(rownames(2020F.exe1c), dim(2020F.exe1c)[1]*0.6)
+head(train.rows)
+train.set <- 2020F.exe1c[train.rows, ]
+head(train.set[1:10])
+dim(train.set)
+
+##### Validation Example #####
+
+valid.rows <-setdiff(rownames(F.exe1c), train.rows)
+head(valid.rows)
+valid.set <- 2020F.exe1c[valid.rows, ]
+head(valid.set[1:10])
+dim(valid.set)
+dim(2020F.exe1c)
