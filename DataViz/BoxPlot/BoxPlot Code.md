@@ -35,6 +35,8 @@ View(WestRoxburyHighEnd.df)
 boxplot(WestRoxburyHighEnd.df$TOTAL.VALUE ~ WestRoxburyHighEnd.df$BEDROOMS, main = "High End Home Value Compared to Bedrooms",
 xlab = "Bedrooms", ylab = "Total Value")
 
+![image](https://user-images.githubusercontent.com/28680575/102856123-e9967e00-43f3-11eb-9263-87a431ad4863.png)
+
 -----
 
 #Example from Data Analysis with R 3.2
