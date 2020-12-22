@@ -1,6 +1,6 @@
-#Anovas are used to test groups to see if there’s a difference between them
-#One Way Anova: Compares impact of one independent categorical variable on a numeric outcome
-#Two Way Anova: Compares impact of two independent categorical variables on a numeric outcome 
+Anovas are used to test groups to see if there’s a difference between them
+One Way Anova: Compares impact of one independent categorical variable on a numeric outcome
+Two Way Anova: Compares impact of two independent categorical variables on a numeric outcome 
 
 ##### One Way Anovas #####
 #A one way ANOVA is used to compare two means from two independent (unrelated) groups using the F-distribution. 
