@@ -82,3 +82,5 @@ boxplot(WestRoxburyHighMid.df$TOTAL.VALUE ~WestRoxburyHighMid.df$BEDROOMS, main 
         xlab="Bedrooms", ylab="HomeValue")
 boxplot(WestRoxburyHighEnd.df$TOTAL.VALUE ~ WestRoxburyHighEnd.df$BEDROOMS, main = "High End Value", 
         xlab="Bedrooms", ylab="HomeValue")
+
+![image](https://user-images.githubusercontent.com/28680575/102855928-94f30300-43f3-11eb-9d2d-aa37fe9b1168.png)
