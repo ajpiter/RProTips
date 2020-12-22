@@ -19,6 +19,14 @@ is.na(x = NA)
 
 ##### Check to see if Data Table is NA ##### 
 records.missing <- rowSums(is.na(DataTable))>0 
+View(records.missing)
+
+##### Keeps only non-missing values #####
 DataTable.nonmissing <- DataTable[!records.missing, ] 
 dim(DataTable.nonmissing)
 dim(DataTable)
+
+##### Creates New True or False Column for Missing Data #####
+# missing: if missing, set "true", otherwise "false" into records.missing
+DataTable$MissingVariable <- rowSums(is.na(DataTable))>0 
+
