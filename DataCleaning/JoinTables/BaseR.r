@@ -11,6 +11,9 @@ TableY <- data.frame(nametab2, SBP)
 colnames(tabX) <- c("CarName", "HighwaySpeed")
 colnames(tabY) <- c("CarName", "MaxSpeed")
 
+#Append one table to the bottom of another
+rbind(table1, table2) 
+
 #all.x = TRUE is a left merge 
 Q1merge <- merge(TableX, TableY, by="Name", all.x = TRUE)
 
