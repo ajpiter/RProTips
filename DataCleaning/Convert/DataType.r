@@ -1,8 +1,33 @@
-#
+----- # hablar package to convert multiple variables data types at once -----
+#Documentation: https://cran.r-project.org/web/packages/hablar/vignettes/convert.html
+library(hablar) 
+library(dplyr) 
+library(purrr) 
+library(lubridate)
+
+DataFrame %>% 
+  convert(chr(Column1, Column2),
+          int(Column3),
+          dbl(Column4),
+          num(Column5))
+          
+#convert must be used in conjunction with data type conversion functions:
+#chr converts to character.
+#num converts to numeric.
+#int converts to integer.
+#lgl converts to logical.
+#fct converts to factor.
+#dte converts to date.
+#dtm converts to date time.
+
+----- #Base R ----- 
 
 #To find the type of variable for a single row
-class(dataframename.df$ColumnName) 
-# output could be "charter" or "factor" etc. 
+class(dataframename.df$ColumnName) #output could be "charter" or "factor" etc. 
+
+#To change the class of variable from "chatacter" to "factor"
+dataframename.df$ColumnName <- as.factor(dataframename.df$ColumnName) 
+class(dataframename.df$ColumnName) #output should be factor
 
 #To convert data types, use the following functions 
 as.interger()
@@ -13,16 +38,10 @@ as.POSIXct()
 as.POSIXit()
 as.Date()
 
-#To change the class of variable from "charter" to "factor"
-dataframename.df$ColumnName <- as.factor(dataframename.df$ColumnName) 
-class(dataframename.df$ColumnName)
-#output should be factor
-
 #levls() shows the word labels for factor variables 
-levels(dataframename.df$ColumnName) 
-#output will show the text labels of a factor variable, not the numeric numbers 
+levels(dataframename.df$ColumnName) #output will show the text labels of a factor variable, not the numeric numbers 
 
-#Below is an example from Data Mining with R 2.5 
+----- #Below is an example from Data Mining with R 2.5 ----- 
 
 > class(housing.df$REMODEL)
 [1] "character"
