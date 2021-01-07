@@ -1,5 +1,6 @@
-#Example came from article here: https://medium.com/@prashant.nair2050/creating-dummy-variables-for-categorical-data-in-r-programming-c2afe5d1a4ac
+----- # fastDummies Package ----- 
 
+#Example came from article here: https://medium.com/@prashant.nair2050/creating-dummy-variables-for-categorical-data-in-r-programming-c2afe5d1a4ac
 #Load library 
 library(fastDummies)
 library(knitr) 
@@ -19,4 +20,13 @@ results <- fastDummies::dummy_cols(fastDummies_example, select_columns = "animal
 knitr::kable(results)
 
 #if using to create dummy variables don't forget to delete one of the columns 
+housing.df<-housing.df[, 1:15]]# remove16th column, keeping only 1st -15th
+
+----- #dummies Package ---- #Categorical to Factor 
+#Don't forget to drop one of the dummy results
+
+install.packages("dummies") # need to install packages, named dummies
+library(dummies)# call the package 
+
+housing.df<-dummy.data.frame(housing.df, sep= ".")# create dummies in housing.df
 housing.df<-housing.df[, 1:15]]# remove16th column, keeping only 1st -15th
