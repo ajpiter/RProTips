@@ -2,6 +2,11 @@
 #You could also create shorter names to decrease the charters in your code 
 #I tend to use longer more descriptive column names which helps when returning to code later
 
+----- #Rename Columns Using Dplyr -----
+library(dplyr)
+DataFrame <- rename(DataFrame, NewColumnName = OldColumnName) 
+HomeValuesMetro.df <- rename(HomeValuesMetro.df, MetroArea = RegionName)
+
 ----- #Change Based on Old Column Names ----- 
 names(DataFrame)[names(DataFrame) == "OldColumnName"] <- "NewColumnName"
 names(OrlGameLog)[names(OrlGameLog) == "Rk"] <- "GameRank"
