@@ -1,12 +1,14 @@
-#Removing Columns in Base R 
-
+----- #Removing Rows & Columns by Index -----
 #Remove Unessary Rows, and Columns [Row, Column]
 HomeInventoryMetro.df<- HomeInventoryMetro.df[-1,] #row
 HomeInventoryMetro.df<- HomeInventoryMetro.df[,-1:-2]#columns
 HomeInventoryMetro.df<- HomeInventoryMetro.df[,-2] #columns
 
------ 
-#Removing Columns using TidyVerse 
+----- #Removing Rows in Base R by Value ----- 
+#Remove rows where the values in specified columns equal specified values 
+DataFrame <- DataFrame[!(DataFrame$Column1 =="B" & DataFrame$Column2==0),]
+
+----- #Removing Columns using TidyVerse ----- 
 library(tidyverse)
 
 #Removing Columns by Name, removes the two specified columns 
