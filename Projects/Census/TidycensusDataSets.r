@@ -2,9 +2,13 @@
 #Without knowing which datasets are available in the tidycensus package, you will run across numerous error messages 
 #Below are the functions to create datatables in R for each of the available Census datasets that list the variables available 
 
+#Once you know which tables are available you can pull entire tables in R using the following example 
+
 # Load the tidycensus package into your R session
 library(tidycensus)
 library(tidyverse) 
+FLIncome <- get_acs(geography = "county", state = "FL", table = "B19001")
+                    
 
 ----- # Define your Census API key and set it with census_api_key() ----- 
 api_key <- "#####"
