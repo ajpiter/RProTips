@@ -1,6 +1,8 @@
-The inspiration for this project is Data Camp's course 
-"Analyzing US Census Data in R"
+The inspiration for this project is Data Camp's course "Analyzing US Census Data in R"
 Information was modified based on my curiosity and simplifying steps for future reference 
+
+- Tidycensys Package: Pull Census datasets in R using the Census API
+- Tigris Package: Load Census shapefiles as spatial objects in R 
 
 - Data Camp Course: https://learn.datacamp.com/courses/analyzing-us-census-data-in-r
 - TidyCensus Package Documentation: https://walker-data.com/tidycensus/articles/basic-usage.html
