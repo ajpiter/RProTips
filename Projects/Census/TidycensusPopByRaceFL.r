@@ -11,10 +11,12 @@ Race <- c(race_vars <- c(White = "B03002_003",
                          HIPI = "B03002_007", 
                          Hispanic = "B03002_012"))
 
-FLPopByRace <- get_acs(geography = "county",
+FLPopByRace <- map_df(2009:2019, function(x) {get_acs(geography = "county",
                        state = "FL",                   
                        variables = Race,                    
-                       summary_var = "B03002_001")
+                       summary_var = "B03002_001", 
+                       year = x) %>%
+    mutate(year = x)})
 
 # Name Column is formated as "Orange County, Florida 
 CountyIndex <- str_split_fixed(FLPopByRace$NAME, ",", 2) #Create County Index Matrix
