@@ -1,0 +1,36 @@
+# Load the tidycensus package into your R session
+library(tidycensus)
+library(tidyverse) 
+library(stringr)
+library(dplyr)
+library(tigris)
+library(sf)
+
+----- # Define your Census API key and set it with census_api_key() ----- 
+api_key <- "#####"
+census_api_key(api_key, install = TRUE)
+readRenviron("~/.Renviron")
+Sys.getenv("CENSUS_API_KEY") # Check your API key
+
+----- #Size Issues ----- 
+#It can take awhile for shapefiles to download and plot 
+
+#1. Use smaller areas, ie. Seminole county instead of the state of Florida
+
+#2. Use cartographic boundary shapefiles, to more accurately depict land area and create smaller datasets 
+#cb = TRUE 
+
+#3. Save the files in the cache directory 
+tigris_cache_dir("/Users/Username/Folder/Subfolder") #optional will default to working directory 
+options(tigris_use_cache = TRUE
+
+----- #Plot Seminole County Florida Census Tract -----
+library(tigris)
+options(tigris_use_cache = TRUE)
+SeminoleCensus <- tracts(state = "FL", county = "Seminole", cb = TRUE)
+plot(SeminoleCensus)
+![image](https://user-images.githubusercontent.com/28680575/104062985-764d8400-51c9-11eb-9544-0beebabc15b9.png)
+
+SeminoleWater <- area_water(state = "FL", county = "Seminole")
+plot(SeminoleWater)
+![image](https://user-images.githubusercontent.com/28680575/104063205-cdebef80-51c9-11eb-822e-a099f556a6be.png)
