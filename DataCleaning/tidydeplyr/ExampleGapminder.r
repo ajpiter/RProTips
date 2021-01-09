@@ -2,6 +2,7 @@
 #Final Graph is my own based on course concepts 
 
 ![image](https://user-images.githubusercontent.com/28680575/104088949-9b2d1000-5238-11eb-8aa6-0399b72b32c3.png)
+https://github.com/ajpiter/RProTips/issues/1#issuecomment-757126826
 
 library(gapminder)
 library(tidyverse)
