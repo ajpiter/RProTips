@@ -5,25 +5,24 @@
 
 ![image](https://user-images.githubusercontent.com/28680575/104088949-9b2d1000-5238-11eb-8aa6-0399b72b32c3.png)
 
-
 library(gapminder)
+
 library(tidyverse)
+
 library(dplyr)
+
 library(ggplot2)
 
-
-#### Look at the gapminder dataset
-
+### Look at the gapminder dataset
 gapminder
 
-### Filter in Tidy Verse 
+## Filter in Tidy Verse 
 
-#### filter for one year 
+### filter for one year 
 gapminder2007 <- gapminder %>% 
   filter(year == 2007)
 
-#### filter for one country 
-
+### filter for one country 
 gapminderUS <- gapminder %>%  
   filter(country == "United States")
 
