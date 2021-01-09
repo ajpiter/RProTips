@@ -1,35 +1,46 @@
 #Example based off the Data Camp Intro to Tidy Verse Course
+
 #Final Graph is my own based on course concepts 
 
 ![image](https://user-images.githubusercontent.com/28680575/104088949-9b2d1000-5238-11eb-8aa6-0399b72b32c3.png)
+
 
 library(gapminder)
 library(tidyverse)
 library(dplyr)
 library(ggplot2)
 
+
 # Look at the gapminder dataset
+
 gapminder
 
 ----- #Filter in Tidy Verse -----
+
 #filter for one year 
+
 gapminder2007 <- gapminder %>% 
   filter(year == 2007)
 
 #filter for one country 
+
 gapminderUS <- gapminder %>%  
   filter(country == "United States")
 
 #filter for both year and country 
+
 gapminderUS2007 <- gapminder %>%  
   filter(year == 2007, country == "United States")
 
 ----- #Arrange in Tidy Verse -----
+
 #sort by column gdpPercap
+
 gapminder <- gapminder %>% 
   arrange(gdpPercap)
 
 #sort in decsending order 
+
 gapminder <- gapminder %>%  
   arrange(desc(gdpPercap))
 
