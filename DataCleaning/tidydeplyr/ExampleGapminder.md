@@ -14,10 +14,10 @@ library(dplyr)
 
 library(ggplot2)
 
-### Look at the gapminder dataset
+#### Look at the gapminder dataset
 gapminder
 
-## Filter in Tidy Verse 
+## Tidy Verb: Filter  
 
 ### Filter for One Year 
 gapminder2007 <- gapminder %>% 
@@ -31,7 +31,7 @@ gapminderUS <- gapminder %>%
 gapminderUS2007 <- gapminder %>%  
   filter(year == 2007, country == "United States")
 
-## Arrange in Tidy Verse
+## Tidy Verb: Arrange 
 
 ### Sort by gdpPercap
 gapminder <- gapminder %>% 
@@ -46,7 +46,9 @@ gapminder2007 <- gapminder %>%
   filter(year == 2007) %>%  
   arrange(desc(gdpPercap))
 
-## Mutate to Create a New Variable 
+## Tidy Verb: Mutate
+
+### Mutate to Create a New Variable 
 gapminder %>%  
   mutate(gdp = gdpPercap * pop)
 
