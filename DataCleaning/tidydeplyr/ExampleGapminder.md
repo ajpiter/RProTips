@@ -1,6 +1,6 @@
 ## Tidyverse Example Utilizing Data from Gapminder Package 
 
-**Example based off the Data Camp Intro to Tidy Verse Course
+**Example based off the Data Camp Intro to Tidy Verse Course.
 Final Graph is my own based on course concepts**
 
 
