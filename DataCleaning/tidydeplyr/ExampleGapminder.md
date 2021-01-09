@@ -14,7 +14,7 @@ library(dplyr)
 
 library(ggplot2)
 
-#### Look at the gapminder dataset
+### Look at the gapminder dataset
 gapminder
 
 ## Tidy Verb: Filter  
