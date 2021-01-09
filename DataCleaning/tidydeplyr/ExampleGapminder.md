@@ -1,7 +1,7 @@
 ## Gapminder Tidyverse Example
 
-### Example based off the Data Camp Intro to Tidy Verse Course
-### Final Graph is my own based on course concepts 
+#### Example based off the Data Camp Intro to Tidy Verse Course
+#### Final Graph is my own based on course concepts 
 
 ![image](https://user-images.githubusercontent.com/28680575/104088949-9b2d1000-5238-11eb-8aa6-0399b72b32c3.png)
 
@@ -18,69 +18,60 @@ gapminder
 
 ## Filter in Tidy Verse 
 
-### filter for one year 
+### Filter for One Year 
 gapminder2007 <- gapminder %>% 
   filter(year == 2007)
 
-### filter for one country 
+### Filter for One Country 
 gapminderUS <- gapminder %>%  
   filter(country == "United States")
 
-#filter for both year and country 
-
+### Filter for Both Year and Country 
 gapminderUS2007 <- gapminder %>%  
   filter(year == 2007, country == "United States")
 
------ #Arrange in Tidy Verse -----
+## Arrange in Tidy Verse
 
-#sort by column gdpPercap
-
+### sort by column gdpPercap
 gapminder <- gapminder %>% 
   arrange(gdpPercap)
 
-#sort in decsending order 
-
+### sort in decsending order 
 gapminder <- gapminder %>%  
   arrange(desc(gdpPercap))
 
-#Filter and Arrange 
-
+### Filter and Arrange 
 gapminder2007 <- gapminder %>%  
   filter(year == 2007) %>%  
   arrange(desc(gdpPercap))
 
-#Mutate to create a new variable 
-
+## Mutate to create a new variable 
 gapminder %>%  
   mutate(gdp = gdpPercap * pop)
 
-#mutate to update the values of an existing variable 
-
+### mutate to update the values of an existing variable 
 gapminder %>%  
   mutate(pop = pop / 1000000)
 
-#Multiple tidy verbs 
-
+### Multiple tidy verbs 
 gapminder2007 <- gapminder %>% 
   mutate(gdp = gdpPercap * pop) %>%
   filter(year == 2007) %>% 
   arrange(desc(gdp))
 
------ #Scatter Plot -----
-
+## Scatter Plot
 ggplot(gapminder2007, aes(x = gdpPercap, y = lifeExp)) +  geom_point()
 
 ![image](https://user-images.githubusercontent.com/28680575/104087177-ce1cd700-522b-11eb-836c-d6d421346d08.png)
 
-#Scatter Plot Log Scale 
-
+### Scatter Plot Log Scale 
 ggplot(gapminder2007, aes(x = gdpPercap, y = lifeExp, color = continent, size = pop)) +  
   geom_point() +  
   scale_x_log10()
 
 ![image](https://user-images.githubusercontent.com/28680575/104087279-8e0a2400-522c-11eb-9194-daeafcf88a0d.png)
 
-#Series of Scatter Plots
+### Series of Scatter Plots
 
 ggplot(gapminder, aes(x = gdpPercap, y = lifeExp, color = continent)) + 
   geom_point() + 
@@ -89,7 +80,7 @@ ggplot(gapminder, aes(x = gdpPercap, y = lifeExp, color = continent)) +
 
 ![image](https://user-images.githubusercontent.com/28680575/104087373-39b37400-522d-11eb-9c48-3dc93eff00e3.png)
 
------ #Summarise -----
+## Summarise Tidy Verb
 
 SummaryTable2007 <- gapminder %>% 
   filter(year == 2007) %>% 
@@ -104,7 +95,7 @@ SummaryTable2007 <- gapminder %>%
   group_by(continent) %>% 
   summarize(meanLifeExp = mean(lifeExp), totalPop = sum(as.numeric(pop)))
 
------ #Change in Global Life Expectancy -----
+## Change in Global Life Expectancy
 
 Year <- gapminder %>%
   group_by(year, country, continent) %>% 
