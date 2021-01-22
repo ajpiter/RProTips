@@ -1,6 +1,7 @@
 ## Prediction Models 
 
 **ANOVA**: Predicts continous outcome based on categorical values 
+
 **Regression**: Predicts continous outcome based on continous values 
 
 ## Types of Machine Learning Models 
