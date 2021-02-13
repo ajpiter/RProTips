@@ -1,8 +1,9 @@
 #Use ifelse statements to create new conditional variables
 
 DataFrame$NewVariable <- ifelse(Condition, Result if True, Result if False) 
+Vucevic$Location <- ifelse(Vucevic$Location == "@", "Away", "Home")
 
-#Nested ifelse() to Create New Variable Conference
+----- #Nested ifelse() to Create New Variable Conference ----- 
 Vucevic$Conference <-  ifelse(Vucevic$Opponent == "ATL", "Eastern", 
                         ifelse(Vucevic$Opponent == "BOS", "Eastern",
                         ifelse(Vucevic$Opponent == "BRK", "Eastern",
@@ -10,7 +11,7 @@ Vucevic$Conference <-  ifelse(Vucevic$Opponent == "ATL", "Eastern",
                         ifelse(Vucevic$Opponent == "CHO", "Eastern",
                         ifelse(Vucevic$Opponent == "CHI", "Eastern", FALSE) 
                         
-#Nested ifelse() with "or" opperator |  to Create New Variable Time Zone 
+----- #Nested ifelse() with "or" opperator |  to Create New Variable Time Zone ----- 
 Vucevic$TimeZone <- ifelse(Vucevic$Location == "Home", "Eastern", 
                         ifelse(Vucevic$Location == "Away" & Vucevic$Opponent == "ATL", "Eastern", 
                         ifelse(Vucevic$Location == "Away" & Vucevic$Opponent == "BOS", "Eastern",
