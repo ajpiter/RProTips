@@ -12,4 +12,5 @@
 - **ConfidenceInterval:** 
 - **Correlation:** The numeric representation of a Correlation Matrix. Shows which variables are related to each other without the graphic of a Correlation Matrix. 
 - **CorrelationMatrix:** Uses package ggcorrplot to determine if variables are related to one another. Helpful to run before building model to determine which variables to eliminate. 
+- **LeftSideLeakage:** When an input variable is part of the calculation for the response variable. 
 - **TwoSampleTTest:** Is there a difference between two groups on the same variable. Example is there a difference in the purchase habits of young and old customers. 
