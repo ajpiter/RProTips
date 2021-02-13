@@ -24,3 +24,5 @@ VucevicTest <- testing(VucevicSplit)
 #Shows the response (Double Double) ratio for Training and Testing data  
 table(VucevicTrain$DoubleDouble) %>% prop.table()
 
+#The breakdown of Double Double's on the **VucevicTest** dataset:
+table(VucevicTest$DoubleDouble) %>% prop.table()
