@@ -1,1 +1,1 @@
-- **DeathRateByTerrorities:**
+- **DeathRateByTerrorities:** Muliple Linear Regression estimating the Death Rate based on the inputs, Year, U.S. and Virgin Islands
