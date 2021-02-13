@@ -5,4 +5,4 @@
 
 ### Logisitic Regression 
 
-- **Vucevic Double Double:** Predicts whether Vucevic will score a double-double using glm(). Steps from Data Scrapping, to evaulating multiple models with a confusion Matrix. 
+- **VucevicDouble-Double:** Predicts whether Vucevic will score a double-double using glm(). Steps from Data Scrapping, to evaulating multiple models with a confusion Matrix. 
