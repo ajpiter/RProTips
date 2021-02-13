@@ -26,4 +26,5 @@ Vucevic <- Vucevic %>% convert(
 
 - **AddingDataTypes:** Reference when creating new variables with variables of different data types. 
 - **Character2Date:** Specifies the date format options. 
+- **Character2Dummy:** Creates variables with 0 or 1 values instead of factor levels
 - **
