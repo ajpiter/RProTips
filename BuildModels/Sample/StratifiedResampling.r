@@ -11,7 +11,8 @@ A 70/30% split was used across 627 observations in the original Vucevic dataset.
 
 A stratified sampling approach was taken to ensure a balanced representation of the response distribution in both the training and testing datasets. In other words we used a similar percent of games where Vucevic scored a Double Double in both the training and testing data. 
 
-The breakdown of Double Double's on the **VucevicTrain** dataset: """
+The breakdown of Double Double's on the **VucevicTrain** dataset: 
+"""
 
 #Stratified resampling using the rsample package 
 set.seed(123)
