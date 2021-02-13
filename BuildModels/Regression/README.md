@@ -10,3 +10,4 @@
 ## Evaulation 
 
 - **TwoSampleTTest:** Is there a difference between two groups on the same variable. Example is there a difference in the purchase habits of young and old customers. 
+- **ConfidenceInterval:** 
