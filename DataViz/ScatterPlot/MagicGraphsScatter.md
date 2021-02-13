@@ -1,6 +1,18 @@
 #Examples from Various Magic Stats Projects 
 #Code Above Image
 
+#Vucevic Double Double's by Season 
+ggplot(Vucevic[!is.na(Vucevic$DoubleDouble),]) + 
+  geom_point(mapping = aes(x=PlayerGameSeason, y=DoubleDouble, color = DoubleDouble)) + 
+  facet_grid(Season ~.) +
+  ggtitle("Vucevic Double Doubles by Season") + 
+  xlab("Vucevic's Game Played in Season") + 
+  ylab("Double Double") + 
+  theme_minimal() + 
+  theme(legend.position = "none")
+  
+ ![image](https://user-images.githubusercontent.com/28680575/107841149-8d623180-6d86-11eb-94a0-10c93b422645.png)
+
 #Fultz Career Game Score 
 ggplot(Fultz, aes(x = PlayerGame, y = GmSc, color = Team)) + 
   geom_point() +
