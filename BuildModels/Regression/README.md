@@ -1,6 +1,7 @@
 ## Linear Regression 
 
 - **LinearRegression:** uses the lm() method in base r to create a linear regression model. Includes steps for evaulating the model. 
+- **MultipleRegression:** uses the lm() method in base r on more than 1 input variable. 
 
 ## Logistic Regression 
 
