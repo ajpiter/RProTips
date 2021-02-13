@@ -25,3 +25,5 @@ Vucevic <- Vucevic %>% convert(
 ## 
 
 - **AddingDataTypes:** Reference when creating new variables with variables of different data types. 
+- **Character2Date:** Specifies the date format options. 
+- **
