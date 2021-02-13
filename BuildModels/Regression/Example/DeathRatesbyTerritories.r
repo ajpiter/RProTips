@@ -3,7 +3,7 @@
 library(tidyverse)
 
 getwd()
-setwd("/Users/amanda/Documents/UF Saved on MBP/Previous Classes/Fall 2020")
+setwd("/Users/amanda/Documents/subfolder/subfolder/")
 DeathRates <- read.csv("Stats World Bank Countries .csv", header = TRUE) 
 
 #Create a plot of Death Rate per Capita vs Time 
