@@ -1,3 +1,5 @@
+# Tidycensys Package for Census API
+
 The inspiration for this project is Data Camp's course "Analyzing US Census Data in R"
 Information was modified based on my curiosity and simplifying steps for future reference 
 
