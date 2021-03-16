@@ -30,4 +30,10 @@ Distance measures determine similarity between observations.
 4. Evaluate the model performance.
 5. Improve the performance of model.
 
+## Learning Resources 
+
+- **Textbook: Data Mining for Business Analytics with R, Chapter 7:** Best Explanination and Code Walk Through 
+- **Datacamp Article:** Best for a quick conceptual understanding https://www.datacamp.com/community/tutorials/machine-learning-in-r
+- **Textbook: Hands on Machine Learning with R** Best explination of how to calaculate Euclindiean and Manhattan Distance Measurements in R.  
+
 Note: The K-nearest neighbor algorithm is different than k-mean algorithm. K-mean is used for clustering and is a unsupervised learning algorithm whereas KNN is supervised leaning algorithm that works on classification problems (Sirohi, 2019).
