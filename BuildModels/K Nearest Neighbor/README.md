@@ -17,7 +17,7 @@ Distance measures determine similarity between observations.
 - Used in One Hot Encoding 0/1 indicator variables
 - Computing is computationally faster as it only requires additions and subtractions
 
-## Steps Involved in performing KNN algorithm:** (Skand, 2017)
+## Steps Involved in performing KNN algorithm: (Skand, 2017)
 
 1. Data Collection.
 2. Preparing and exploring the data.
