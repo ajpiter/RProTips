@@ -1,4 +1,4 @@
-# The KNN (K Nearest Neighbor):
+# KNN (K Nearest Neighbor) Model:
 
 Algorithm identifies k observations that are “similar” or nearest to the new record being predicted and then uses the average response value (regression) or the most common class (classification) of those k observations as the predicted output. 
 
