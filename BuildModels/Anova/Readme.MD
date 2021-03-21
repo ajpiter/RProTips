@@ -5,26 +5,21 @@ ANOVAs are used to test if there’s a difference between groups. The two most c
 - **Two-Way ANOVA:** Compares impact of two categorical variables independent levels on a numeric outcome using means.  
 
 ## Creating ANOVA Model: Steps to Follow
-
-1. **Check that your observations are independent**. The data is randomly selected and data in one group is independent of data in another group.
-- Verified based on the design of the experiment (most often). 
+1. **Check that your observations are independent:** The data is randomly selected and data in one group is independent of data in another group.
+- Verify Based on the Design of the Experiment (Most Common) 
 - Durbin-Watson Test 
-
 2. **If they are independent, test the normality of residuals:**
-- Visualization of a histogram or QQ plot. 
-- Shapiro-Wilk Test (most often). 
+- Visualization of a Histogram or QQ-plot 
+- Shapiro-Wilk Test (Most Common) 
 - Kolmogorov-Smirnov Test 
-
 3. **If normality is assumed, test the homogeneity of the variances:**
-- Visually by comparing the dispersion in a boxplot or dotplot
-- Levene’s test
-- Bartlett's test 
-
-4. Choose a Method: 
-- **If variances are equal, use ANOVA.**
-- **If variances are not equal, use the Welch test.**
-- **If normality is not assumed, use the Kruskal-Wallis test.**
-
+- Visually by Comparing the Distribution in a Boxplot or Dotplot
+- Levene’s Test
+- Bartlett's Test 
+4. **Choose a Method:** 
+- If Variances are Equal, use ANOVA
+- If Variances are Not Equal, use the Welch Test
+- If Normality is Not Assumed, use the Kruskal-Wallis Test
 5. **After creating a model run post-hoc tests:** 
 - Tukeys Test
 - Dunnett Test
@@ -32,7 +27,7 @@ ANOVAs are used to test if there’s a difference between groups. The two most c
 
 ## ANOVA Tests
 
-When working with Anovas the following tests should be utilized. 
+When working with Anovas the following tests might be utilized. 
 
 - **Bartlett Test:** Tests for homoscedasticity (equality of variances) for different groups (levels in categorical variable) ensuring they are equal. Could also use Levene's test or a simple boxplot. 
 - **Durbin-Watson:** Tests that the observations are independent. 
