@@ -17,10 +17,6 @@ Example Leg Strength According to Weight
 - **Dependent Group:** Weight
 - **Dependent Levels:** Underweight, Average Weight, Overweight 
 
-Testing
-- **F-Statistic:** will tell you at least two groups were different from each other. But it won’t tell you which groups were different. 
-- **Least Significant Difference:** to show which groups had different means 
-
 ## Two Way Anovas 
 
 Example Leg Strength According to Weight & Age Group 
