@@ -34,3 +34,14 @@ When working with Anovas the following tests should be used
 - **Tukeys:** 
 - **Kruskall Wallace:** Medians 
 - **Randomization Tests:** 
+
+## Learing Resources 
+
+**Towards Data Science Article: ANOVA in R** 
+- https://towardsdatascience.com/anova-in-r-4a4a4edc9448
+- Better Explination from coding to interperting the results 
+- Answers the WHY 
+
+**Textbook: Practical Statistics for Data Scientist** 
+- Chapter 2, Section Anova Page 138 to 152. 
+- Decent explination of testing 
