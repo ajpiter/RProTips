@@ -10,3 +10,7 @@ Before using the Kruskal-Wallis Model attempt to transform data using either a l
 ## R-Code 
 
 kruskal.test(variable ~ group, data = dataframe) 
+
+# Recommended Reading
+
+[1] Kruskal-Wallis ANOVA: Use & Misuse. Influential Points. https://influentialpoints.com/Training/statistical_mistakes_in_research_use_and_misuse_of_statistics_in_biology.htm
