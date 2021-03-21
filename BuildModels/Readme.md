@@ -31,9 +31,9 @@ https://www.amazon.com/dp/B08L8GRRBM/?coliid=I3GAGHP2RNWM6Q&colid=J71FGVZU2MCC&p
 ### Decision Tress 
 
 ### Neural Networks (Excluding Linear) 
-- **Recurrent Neural Networks:** 
-- **Conditional Neural Networks:** 
-- **Dense Neural Networks:** 
+- **Conditional Neural Networks (CNN):** 
+- **Dense Neural Networks (DNN):** 
+- **Recurrent Neural Networks (RNN):** 
 
 ### Support Vector Machines 
 
