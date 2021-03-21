@@ -2,8 +2,23 @@
 
 ## Models Borrowed from Statistics 101
 
-- **ANOVA**: ANOVA compares 3 or more groups
-- **Regression**: Predicts continous outcome based on continous values 
+### ANOVA 
+
+ANOVAs compares different levels of a categorical variable based on a continuous quantative variable. 
+
+#### Types of ANOVA Models 
+- **One Way ANOVA:** The standard ANOVA model 
+- **Two Way ANOVA:** 
+- **Kruskal-Wallis**: Use when data does not follow a normal distribution (fails either the Shapiro-Wilk Test or Kolmogorov-Smirnov Test). Kriskal-Wallis compares levels of categorical variables with a continuous quantative variable based on MEDIANS. 
+- **Repeated Measures ANOVA:** Use when data between levels of your categorical variable is not independent. This most often occurs when measuring a metric before, durning and after something. Think medical treatment or marketing campaign.
+
+#### Testing ANOVAs 
+- **Shapiro-Wilk:** Most common test for normalitiy between levels of categorical data in an ANOVA. 
+- **Kolmogorov-Smirnov:** Alternative test for normality between levels of categorical data in an ANOVA. 
+
+### Regression 
+
+Regression models predict continous outcome based on continous values 
 
 ## Types of Machine Learning Models 
 
