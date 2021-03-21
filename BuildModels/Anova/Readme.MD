@@ -15,7 +15,7 @@ ANOVAs are used to test if there’s a difference between groups. The two most c
 - Shapiro-Wilk Test (most often). 
 - Kolmogorov-Smirnov Test 
 
-3 **If normality is assumed, test the homogeneity of the variances:**
+3. **If normality is assumed, test the homogeneity of the variances:**
 - Visually by comparing the dispersion in a boxplot or dotplot
 - Levene’s test
 - Bartlett's test 
