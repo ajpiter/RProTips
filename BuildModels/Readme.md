@@ -31,28 +31,26 @@ https://www.amazon.com/dp/B08L8GRRBM/?coliid=I3GAGHP2RNWM6Q&colid=J71FGVZU2MCC&p
 ### Decision Tress 
 
 ### Neural Networks (Excluding Linear) 
-#### Recurrent Neural Networks 
-#### Conditional Neural Networks 
-#### Dense Neural Networks 
+- **Recurrent Neural Networks:** 
+- **Conditional Neural Networks:** 
+- **Dense Neural Networks:** 
 
 ### Support Vector Machines 
 
 ## Unsupervised Learning 
 
 ### Clustering 
-#### K-Means Clustering (Most Common) 
+- **K-Means Clustering:** (Most Common) 
+- **Density Based Special Clustering with Noise (DBSCAN):** 
+
+### Dimensionality Reduction 
+- **Principal Component Analysis (PCA):** 
+
+### Associate Rule Learning 
 
 ## Learning Resources 
 (Model Specific Learning Resources are Listed on Indivdual Github Pages) 
 
 1. **Practical Statistics for Data Science:** Almost an entire book devoted to regression and linear modeling. Covers concepts you forgot from stats class and how to implement in R or Python. From correlation, to sampling to accessing the model and cross validation. 
 https://www.amazon.com/dp/B08712TT3F/?coliid=I1QFDAWSRQ1J9M&colid=J71FGVZU2MCC&psc=0&ref_=lv_ov_lig_dp_it_im
-
-#### Density Based Special Clustering with Noise (DBSCAN) 
-
-### Dimensionality Reduction 
-
-#### Principal Component Analysis (PCA) 
-
-### Associate Rule Learning 
 
