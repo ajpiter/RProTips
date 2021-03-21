@@ -1,21 +1,10 @@
-# Anovas
+# ANOVAs
 
 Anovas are used to test if there’s a difference between groups. Types of Anovas include:  
 - **One Way Anova:** Compares impact of one independent levels of categorical variable on a numeric outcome using means.  
 - **Two Way Anova:** Compares impact of two independent levels of categorical variables on a numeric outcome using means.  
 - **Kruskall Wallace:** Compares impact of independent levels of categorical variables on a numeric outcome using medians. 
 - **Repeated Measures ANOVA:** If data between groups is not independent consider preforming a **Repeated Measures ANOVA**. This most often occurs when measuring a metric before, during and after something. Think medical treatment or marketing campaign.
-
-## One Way Anovas
-
-A one way ANOVA is used to compare two means from an independent (unrelated) groups of a categorical variable using an F-distribution. 
-- **Null Hypothsis:** That the means of the groups (levels in categorical variable) are all equal and there is no difference between groups.  
-- **Significant Result:** At least one group (a level in a categorical variable) has a mean that is differnet from the means of the other groups. 
-
-Example Leg Strength According to Weight 
-- **Independent Variable:** Leg Strength 
-- **Dependent Group:** Weight
-- **Dependent Levels:** Underweight, Average Weight, Overweight 
 
 ## Two Way Anovas 
 
