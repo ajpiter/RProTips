@@ -15,10 +15,6 @@ ANOVAs compares different levels of a categorical variable based on a continuous
 - **Shapiro-Wilk:** Most common test for normalitiy between levels of categorical data in an ANOVA. 
 - **Kolmogorov-Smirnov:** Alternative test for normality between levels of categorical data in an ANOVA. 
 
-### Regression 
-
-Regression models predict continous outcome based on continous values 
-
 ## Types of Machine Learning Models 
 
 There have been many books written on supervised vs. unsupervised machine learning models, and at somepoint I should probably add my notes to reference later. For now the best quick explination is the visual below. 
@@ -30,6 +26,7 @@ https://www.amazon.com/dp/B08L8GRRBM/?coliid=I3GAGHP2RNWM6Q&colid=J71FGVZU2MCC&p
 ## Supervised Learning 
 
 ### Linear Networks (Most Common) 
+- **Regression:** Regression models predict continous outcome based on continous values 
 
 ### Decision Tress 
 
