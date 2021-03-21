@@ -34,13 +34,15 @@ ANOVAs are used to test if there’s a difference between groups. The two most c
 Summary Descriptions of Possible Tests that Might be Utilized When Working with ANOVAs:  
 
 - **Bartlett Test:** Tests for homoscedasticity (equality of variances) for different groups (levels in categorical variable) ensuring they are equal. Could also use Levene's test or a simple boxplot. 
+- **Dunnett** Post-hoc test run after the ANOVA results have determined one group is different from another group. Dunnett is specifically used to make comparisons with a reference group. For example, consider 2 treatment groups and one control group. Assumes variances are equal. 
 - **Durbin-Watson:** Tests that the observations are independent. 
 - **F-Statistic:** Will tell you at least two groups were different from each other. But it won’t tell you which groups were different for that you need to preform a Least Significant Difference test. 
+- **Games-Howell test:** Post-hoc test run after the ANOVA results have determined one group is different from another group. Used when variances are NOT equal. Following the Welch or Krustal-Wallace Test. 
 - **Kolmogorov-Smirnov Test:** Alternative test for normal distribution of data (typically use Shapiro-Wilk). 
 - **Least Significant Difference:** Show which groups had different means from other groups. Run if the F-Statistic test showed that at least two groups were different from each other. 
 - **Levene Test:** Tests for homoscedasticity (equality of variances) for different groups (levels in categorical variable) ensuring they are equal. Could also use Bartlett's test or a simple boxplot.
 - **Shapiro-Wilk Test:** Most Common test for normal distributed of data. 
-- **Tukeys:** Used to compare all groups to each other (so all possible comparisons of 2 groups)
+- **Tukeys:** Post-hoc test used to compare all groups to each other (so all possible comparisons of 2 groups) after the ANOVA results have determined one group is different from another group. Assumes variances are equal. 
 
 ## Other Types of ANOVA Models 
 
