@@ -30,7 +30,7 @@ dataframename.df$ColumnName <- as.factor(dataframename.df$ColumnName)
 class(dataframename.df$ColumnName) #output should be factor
 
 #To convert data types, use the following functions 
-as.interger()
+as.integer()
 as.numeric()
 as.character()
 as.logical()
