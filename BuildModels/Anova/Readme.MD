@@ -8,7 +8,8 @@ ANOVAs are used to test if there’s a difference between groups. The two most c
 **1. Check that your Observations are Independent** Confirm the data is randomly selected and data in one group is independent of data in another group using either method below:
 - Verify Based on the Design of the Experiment (Most Common) 
 - Durbin-Watson Test 
-2. **If Independent, Test the Normality of Residuals** Using One of the Methods Below: 
+
+**2. If Independent, Test the Normality of Residuals Using One of the Methods Below:** 
 - Visualization of a Histogram or QQ-plot 
 - Shapiro-Wilk Test (Most Common) 
 - Kolmogorov-Smirnov Test 
