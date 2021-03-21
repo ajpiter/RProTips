@@ -10,9 +10,11 @@ While tested on regression, we can use it on the data in our ANOVA model to furt
 Step One: Fit a Linear Regression Model 
 
 #load dataset
+
 dataframe <- 
 
 #fit regression model
+
 model <- lm(DependentVariable ~ IndependentVariable + IndependentVariable2, data=dataframe)
 
 ### Learning Resources 
