@@ -41,6 +41,7 @@ When working with Anovas the following tests should be used
 - https://towardsdatascience.com/anova-in-r-4a4a4edc9448
 - Better Explination from coding to interperting the results 
 - Answers the WHY 
+- One Way Anova
 
 **Textbook: Practical Statistics for Data Scientist** 
 - Chapter 2, Section Anova Page 138 to 152. 
