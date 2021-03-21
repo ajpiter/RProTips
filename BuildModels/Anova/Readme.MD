@@ -5,7 +5,7 @@ ANOVAs are used to test if there’s a difference between groups. The two most c
 - **Two-Way ANOVA:** Compares impact of two categorical variables independent levels on a numeric outcome using means.  
 
 ## Creating ANOVA Model: Steps to Follow
-**1. Check that your Observations are Independent** Confirm the data is randomly selected and data in one group is independent of data in another group using either method below:
+**1. Check that your Observations are Independent Confirm the data is randomly selected and data in one group is independent of data in another group using either method below:**
 - Verify Based on the Design of the Experiment (Most Common) 
 - Durbin-Watson Test 
 
@@ -18,10 +18,12 @@ ANOVAs are used to test if there’s a difference between groups. The two most c
 - Visually by Comparing the Distribution in a Boxplot or Dotplot
 - Levene’s Test
 - Bartlett's Test 
+
 **4. Create ANOVA or Subsitute for Another Test to Compare Groups:** 
 - If Variances are Equal, use ANOVA
 - If Variances are Not Equal, use the Welch Test
 - If Normality is Not Assumed, use the Kruskal-Wallis Test
+
 **5. Run Post-Hoc Tests on ANOVA Possibly Including Tests Listed Below:** 
 - Tukeys Test (Most Common)
 - Dunnett Test
