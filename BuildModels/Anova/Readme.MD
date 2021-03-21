@@ -5,29 +5,29 @@ ANOVAs are used to test if there’s a difference between groups. The two most c
 - **Two-Way ANOVA:** Compares impact of two categorical variables independent levels on a numeric outcome using means.  
 
 ## Creating ANOVA Model: Steps to Follow
-1. **Check that your observations are independent:** The data is randomly selected and data in one group is independent of data in another group.
+**1. Check that your Observations are Independent** Confirm the data is randomly selected and data in one group is independent of data in another group using either method below:
 - Verify Based on the Design of the Experiment (Most Common) 
 - Durbin-Watson Test 
-2. **If they are independent, test the normality of residuals:**
+2. **If Independent, Test the Normality of Residuals** Using One of the Methods Below: 
 - Visualization of a Histogram or QQ-plot 
 - Shapiro-Wilk Test (Most Common) 
 - Kolmogorov-Smirnov Test 
-3. **If normality is assumed, test the homogeneity of the variances:**
+3. **If Normality is Assumed, Test the Homogeneity of the Variances** Using One of the Methods Below: 
 - Visually by Comparing the Distribution in a Boxplot or Dotplot
 - Levene’s Test
 - Bartlett's Test 
-4. **Choose a Method:** 
+4. **Create ANOVA** or Subsitute for Another Test to Compare Groups: 
 - If Variances are Equal, use ANOVA
 - If Variances are Not Equal, use the Welch Test
 - If Normality is Not Assumed, use the Kruskal-Wallis Test
-5. **After creating a model run post-hoc tests:** 
-- Tukeys Test
+5. **Run Post-Hoc Tests on ANOVA** Possibly Including Tests Listed Below: 
+- Tukeys Test (Most Common)
 - Dunnett Test
 - Pairwise T-Test Comparisions (Holm Method) 
 
 ## ANOVA Tests
 
-When working with Anovas the following tests might be utilized. 
+Summary Descriptions of Possible Tests that Might be Utilized When Working with ANOVAs:  
 
 - **Bartlett Test:** Tests for homoscedasticity (equality of variances) for different groups (levels in categorical variable) ensuring they are equal. Could also use Levene's test or a simple boxplot. 
 - **Durbin-Watson:** Tests that the observations are independent. 
@@ -44,6 +44,7 @@ If the ANOVAs Model fails a test, consider using one of the following to compare
 - **Kruskall-Wallace Test:** Compares impact of independent levels of categorical variables on a numeric outcome using ranked medians. Does not require homogeneity of the variances or a normal distribution. Use when model fails a Shapiro-Wilk, Kolmogorov-Smirnov, Levene or Bartlett test of if categorical levels are ranked (ie. Poor, Average, Good, Excellent). 
 - **Welch Test:** Use if the hypothesis of equal variances is rejected for a One-Way or Two-Way Anova. Note that the Welch test does not require homogeneity of the variances, but the distributions should still follow approximately a normal distribution.
 
+Less Common ANOVA Models: 
 - **Balanced ANOVA:** 
 - **Fully Nested ANOVA:** 
 - **General Linear ANOVA:** 
