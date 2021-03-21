@@ -1,6 +1,6 @@
 ## Prediction Models 
 
-**ANOVA**: Predicts continous outcome based on categorical values 
+**ANOVA**: ANOVA compares 3 or more groups
 
 **Regression**: Predicts continous outcome based on continous values 
 
