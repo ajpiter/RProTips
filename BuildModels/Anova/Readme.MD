@@ -1,10 +1,18 @@
 # ANOVAs
 
-Anovas are used to test if there’s a difference between groups. Types of Anovas include:  
+ANOVAs are used to test if there’s a difference between groups. Types of Anovas include:  
 - **One-Way Anova:** Compares impact of one independent levels of categorical variable on a numeric outcome using means.  
 - **Two-Way Anova:** Compares impact of two independent levels of categorical variables on a numeric outcome using means.  
-- **Kruskall-Wallace Test:** Compares impact of independent levels of categorical variables on a numeric outcome using medians. Does not require homogeneity of the variances or a normal distribution. Use when model fails a Shapiro-Wilk, Kolmogorov-Smirnov, Leverne or Bartlett test. 
 - **Repeated Measures ANOVA:** Consider if data between groups is not independent. This most often occurs when measuring a metric before, during and after something. Think medical treatment or marketing campaign.
+
+- **Balanced ANOVA:** 
+- **Fully Nested ANOVA:** 
+- **General Linear ANOVA:** 
+- **General MANOVA:** 
+- **Mixed Effects ANOVA:**  
+
+If the ANOVAs Model fails a test, consider using one of the following to compare the difference between groups instead: 
+- **Kruskall-Wallace Test:** Compares impact of independent levels of categorical variables on a numeric outcome using ranked medians. Does not require homogeneity of the variances or a normal distribution. Use when model fails a Shapiro-Wilk, Kolmogorov-Smirnov, Leverne or Bartlett test of if categorical levels are ranked (ie. Poor, Average, Good, Excellent). 
 - **Welch Test:** Use if the hypothesis of equal variances is rejected for a One-Way or Two-Way Anova. Note that the Welch test does not require homogeneity of the variances, but the distributions should still follow approximately a normal distribution.
 
 ## Testing Anovas
