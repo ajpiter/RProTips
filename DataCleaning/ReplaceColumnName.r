@@ -2,6 +2,11 @@
 #You could also create shorter names to decrease the charters in your code 
 #I tend to use longer more descriptive column names which helps when returning to code later
 
+----- #Rename Columns Using Janitor ----- 
+library(janitor)
+DataFrame %>% row_to_names(row_number = 1)
+#Where the row number is the row you'd like to be the column headers
+
 ----- #Rename Columns Using Dplyr -----
 library(dplyr)
 DataFrame <- rename(DataFrame, NewColumnName = OldColumnName) 
